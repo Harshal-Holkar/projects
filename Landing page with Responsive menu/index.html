@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <section>
+        <header>
+            <div class="wrapper">
+                <img src="logo.svg" alt="logo" class="logo" href="#">
+                <nav>
+                    <ul class="nav-links">
+                        <li a href="#">Home</li>
+                        <li a href="#">About</li>
+                        <li a href="#">Contact</li>
+                        <li a href="#">Help</li>
+                    </ul>
+                </nav>
+                <div class="responsive-bar">
+                    <div class="burger" onclick="animateBar(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="page-title">
+            <div class="vcenter">
+                <span>It's time to take</span>
+                <h1>Vacation</h1>
+                <button>Book now</button>
+                <p>starting from Rs 3000</p>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate illum veniam tenetur odit, aliquid laboriosam perferendis maiores numquam sit impedit?
+    </div>
+
+    <script src="script.js"></script>
+    <!-- <script>
+        $(document).ready(function() {
+            $(".burger").on("click", function() {
+                $(".wrapper nav ul").slideToggle(500);
+            });
+        });
+
+        function animateBar(x) {
+            x.classList.toggle("change");
+        }
+    </script> -->
+</body>
+
+</html>
